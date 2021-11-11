@@ -3,7 +3,7 @@ body {
   max-width: auto;
   background-color: rgb(15, 15, 15, 0.98);
   background:
-    url(/assets/beads.jpg) bottom center repeat fixed;
+    url(/assets/chip.png) bottom center repeat fixed;
 }
 
 body.calc {
@@ -119,11 +119,7 @@ div.aboutme {
   text-align: justify;
 }
 
-img.dark {
-  filter: brightness(25%);
-}
-
-img.dark50 {
+provided img.dark50 {
   filter: brightness(50%);
 }
 

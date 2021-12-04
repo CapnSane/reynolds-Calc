@@ -11,6 +11,10 @@ This number tells us what type of flow is expected for a given pipe, whether _la
 By convention, there is an approximate number of Reynolds where the limits of some regimes are defined. In systems whose Re is **less** than **2000** there is **no turbulence**. This non-turbulent regime is called _laminar flow_. Systems whose Re is **greater** than **2000** are **turbulent**.
 <br>
 
+#### The Calculator
+
+To use the calculator, you can access [Reynolds Calculator](https://capnsane.github.io/reynolds-Calc/).
+
 #### Units of measurement
 
 For now, I have implemented the conversion of some units of measurement. They are:

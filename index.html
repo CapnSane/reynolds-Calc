@@ -21,7 +21,6 @@
   <!-- <script src="main.js"></script> -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <script src="calc.js"></script>
   <link rel="stylesheet" href="/stylesheet.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
 
@@ -166,12 +165,18 @@
 
     <hr style="margin: 30px 100px 30px 100px;">
 
-    <div class="row mt-4 copyright">
-      <div class="col-sm-12 fixed-bottom copyright">
-        <center>Copyright © 2020 Leonardo Schneider. All rights reserved.</center>
+    <div class="row copyright">
+      <div class="col-sm-0 align-self-center fixed-bottom copyright">
+        <center>Copyright © 2020 Leonardo Schneider. All rights reserved. </center>
       </div>
     </div>
+    <div class="row">
+      <div id="visits" class="col-sm-0 fixed-bottom update-footer"></div>
+    </div>
   </div>
+  <script src="calc.js"></script>
+  <script src="counter.js"></script>
+  <script async src="https://api.countapi.xyz/hit/capnsane.github.io/visits?callback=cb"></script>
 </body>
 
 </html>

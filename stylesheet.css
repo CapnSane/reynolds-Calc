@@ -253,8 +253,6 @@ div.carousel-item div.carousel-caption {
   width: 60vw;
 }
 
-/* .dropbtn {} */
-
 .dropdown {
   position: relative;
   display: inline-block;
@@ -291,7 +289,3 @@ div.carousel-item div.carousel-caption {
 .dropproj:hover {
   color: #1F7F1F;
 }
-
-/* .dropdown:hover .dropbtn {
-  background-color: #3e8e41;
-} */

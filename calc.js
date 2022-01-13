@@ -12,6 +12,12 @@ function convertUnits() {
   const veloc = document.getElementById('unitV').value;
   v1 = V / veloc;
 
+  let speedLight = '';
+  const message = ' ... remember, the speed of light...';
+  if (v1 >= 299792458) {
+    speedLight = message;
+  }
+
   // Length units converting
   const len = document.getElementById('unitL').value;
   l1 = L / len;
@@ -35,7 +41,14 @@ function convertUnits() {
   } else if (v1 * l1 * d1 == 0) {
     let x = (document.getElementById('outputRe').innerHTML = '');
   } else {
-    let x = (document.getElementById('outputRe').innerHTML = reyNum);
+    let x = (document.getElementById('outputRe').innerHTML =
+      'Reynolds Number: ' + reyNum);
+  }
+
+  // Conditional for the speed of light limit
+  if (speedLight.length > 0) {
+    let x = (document.getElementById('outputRe').innerHTML =
+      speedLight.fontcolor('#ffff11'));
   }
 
   // Conditional text for the flow (laminar, transition, critical, turbulent)
@@ -44,8 +57,12 @@ function convertUnits() {
     'Pipe flow is transitioning to turbulent in a pipe of diameter D.';
   let text3 = 'Pipe flow is critical in a pipe of diameter D.';
   let text4 = 'Pipe flow is fully turbulent in a pipe of diameter D.';
+  let text5 =
+    'There is something wrong with the speed input, the value is too high.';
   if (reyNum == 0) {
     document.getElementById('flow').innerHTML = '';
+  } else if (speedLight == message) {
+    document.getElementById('flow').innerHTML = text5.fontcolor('#ffffff');
   } else if (reyNum <= 2000) {
     document.getElementById('flow').innerHTML = text1.fontcolor('#005eff');
   } else if (reyNum <= 2900 && reyNum < 4000) {

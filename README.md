@@ -23,8 +23,10 @@ For now, I have implemented the conversion of some units of measurement. They ar
   - m/s
   - cm/s
   - mph
+  - km/h
   - ft/s
   - in/s
+  - km/s
     <br>
 - Characteristic distance (or pipe diameter), _L_
   - m
@@ -43,6 +45,7 @@ For now, I have implemented the conversion of some units of measurement. They ar
     <br>
 - Fluid viscosity (dynamic), _&eta;_
   - Pa⋅s
+  - mPa⋅s
   - cP
   - kg/m⋅s
   - slug/ft⋅s
